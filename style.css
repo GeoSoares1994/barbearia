@@ -1,0 +1,205 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Cores personalizadas */
+:root {
+  --verde: #b5ffb1;
+  --preto: #000;
+  --branco: #fff;
+}
+
+/* Container padrão */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+/* Header / Menu */
+header {
+  background-color: var(--preto);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  display: flex;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  color: var(--verde);
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links li a {
+  color: var(--branco);
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.nav-links li a:hover {
+  color: var(--verde);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: var(--verde);
+  cursor: pointer;
+}
+
+.instagram{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+.instagram blockquote{
+  width: 100%;
+  display: flex;
+}
+
+/* Hero */
+.hero {
+  background: url('img/barbearia-banner.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: var(--branco);
+}
+
+.hero span {
+  color: var(--verde);
+}
+
+.btn-whatsapp {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--verde);
+  color: var(--preto);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #98e795;
+}
+
+/* Seções */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--verde);
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #111;
+  padding: 20px;
+}
+.card img{
+  width: 100%;
+}
+.imagens{
+  display: flex;
+  flex-direction: column;
+}
+.imagens img{
+  width: 50%;
+  margin: 20px auto;
+  justify-content: center;
+
+}
+.video{
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media (max-width: 720px){
+
+  .logo{
+    display: flex;
+    margin: 0 auto;
+  }
+  .nav-links a{
+    display: flex;
+    margin: 0 auto;
+    gap: 2px;
+  }
+  .instagram{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.instagram h2{
+  font-size: 20px;
+}
+.instagram blockquote{
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+}
