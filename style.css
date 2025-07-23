@@ -92,7 +92,7 @@ nav {
 
 /* Hero */
 .hero {
-  background: url('barbearia-banner.jpg') center/cover no-repeat;
+  background: url('./barbearia-banner.jpg') center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
